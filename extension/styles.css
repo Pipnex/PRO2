@@ -1,0 +1,96 @@
+/* Pipnex Trade Lens Floating HUD Styles */
+#pipnex-hud {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 320px;
+  background: rgba(15, 19, 28, 0.94);
+  backdrop-filter: blur(14px);
+  border: 1px solid #1f293d;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+  z-index: 9999999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #f8fafc;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+#pipnex-hud.minimized {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00d2ff, #2563eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pipnex-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1a2233;
+  padding-bottom: 10px;
+}
+
+.pipnex-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.pipnex-logo span {
+  color: #00d2ff;
+}
+
+.pipnex-badge {
+  font-size: 10px;
+  background: rgba(0, 210, 255, 0.15);
+  color: #00d2ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.pipnex-btn {
+  background: linear-gradient(135deg, #00d2ff, #2563eb);
+  color: #050811;
+  border: none;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.pipnex-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.pipnex-levels {
+  background: #090c13;
+  border: 1px solid #161c2c;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pipnex-row {
+  display: flex;
+  justify-content: space-between;
+}
